@@ -1,6 +1,8 @@
 from pathlib import Path
 from decouple import config
 import os
+import django_heroku
+import dj_database_url
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -120,3 +122,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+django_heroku.settings(locals(),staticfiles=False)
