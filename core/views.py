@@ -248,11 +248,4 @@ def logout(request):
 
 
 
-@login_required
-def hobby(request):
-    posts = Post.objects.all()
-    context = {
-        'posts' : posts
-    }
-    return render(request, 'hobby.html', context)
 

@@ -49,29 +49,4 @@ class UserPreferences(models.Model):
     def __str__(self):
         return self.favourite_cusine
     
-from django.db import models
 
-class MarkSheetInformation(models.Model):
-    CHOICE_OPTIONS = (
-        ('Good', 'Good'),
-        ('Average', 'Average'),
-        ('Below Average', 'Below Average'),
-    )
-    user_name = models.CharField(max_length=20)
-    math_marks = models.IntegerField()
-    english_marks = models.IntegerField()
-    teacher_marks = models.CharField(max_length=20, choices=CHOICE_OPTIONS)
-    
-    
-    def __str__(self):
-        self.user_name
-
-from django.db import models
-
-class Contact(models.Model):
-    name = models.CharField(max_length=100)
-    email = models.EmailField()
-    message = models.TextField()
-
-    def __str__(self):
-        return self.name
