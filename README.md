@@ -4,6 +4,6 @@
 • News Feed
 • Create and Manage Posts
 • User Profiles
-• View Others' Profiles
+• View Other's Profiles
 • Comment on Posts
 • Upload Profile Picture
